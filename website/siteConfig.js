@@ -21,41 +21,30 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site' /* title for your website */,
-  tagline: 'A website for testing',
-  url: 'https://your-docusaurus-test-site.com' /* your website url */,
-  baseUrl: '/' /* base url for your project */,
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
-
-  // Used for publishing and more
-  projectName: 'test-site',
-  organizationName: 'facebook',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
+  title: 'Unity Forge' ,
+  tagline: 'Forge a Unity modding framework.',
+  url: 'https://UnityForge.io',
+  baseUrl: '/',
+  projectName: 'Unity-Forge',
+  organizationName: 'AfterShockGames',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
+    {doc: 'what-is-forge', label: 'Docs'},
+    {doc: 'what-is-forge', label: 'API'},
     {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {blog: true, label: 'Blog'}
   ],
 
-  // If you have users set above, you add it here:
-  users,
-
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
-  favicon: 'img/favicon.png',
+  headerIcon: 'img/forge.svg',
+  footerIcon: 'img/forge.svg',
+  favicon: 'img/favicon.ico',
 
   /* colors for website */
   colors: {
-    primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    primaryColor: '#262526',
+    secondaryColor: '#7f8084'
   },
 
   /* custom fonts for website */
@@ -69,31 +58,20 @@ const siteConfig = {
       "system-ui"
     ]
   },*/
-
-  // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Your Name or Your Company Name',
+    ' AfterShockGames',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'default'
   },
-
-  // Add custom scripts here that would be placed in <script> tags
   scripts: ['https://buttons.github.io/buttons.js'],
-
-  /* On page navigation for the current documentation page */
   onPageNav: 'separate',
-
-  /* Open Graph and Twitter card images */
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
-
-  // You may provide arbitrary config keys to be used as needed by your
-  // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  ogImage: 'img/forge.png',
+  twitterImage: 'img/forge.png',
+  repoUrl: 'https://github.com/AfterShockGames/UnityForge',
 };
 
 module.exports = siteConfig;
